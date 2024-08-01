@@ -32,4 +32,13 @@ class WebAppApplicationTests {
 			.string(containsString("Hello, Diogo")));
 	
 	}
+	
+	public void checkingUpdatedMenssage2() throws Exception {
+		this.mockMvc.perform(get("/Professor"))
+			
+			.andDo(print()).andExpect(status().isOk())
+			.andExpect(content()
+			.string(containsString("Hello, professor Ramide")));
+	
+	}
 }
