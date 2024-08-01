@@ -18,6 +18,6 @@ public class HomeController {
 	
 	@RequestMapping("/Professor")
 	public @ResponseBody String greetingSiclano() {
-	return "Hello, Professor Ramide!";
+	return "Hello, Professor Ramide! Ajuste Passo 2 Parte 3.";
 	}
 }
