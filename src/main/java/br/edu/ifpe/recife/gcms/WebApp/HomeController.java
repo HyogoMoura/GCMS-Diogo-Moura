@@ -20,4 +20,9 @@ public class HomeController {
 	public @ResponseBody String greetingSiclano() {
 	return "Hello, Professor Ramide! Ajuste Passo 2 Parte 3.";
 	}
+	
+	@RequestMapping("/Hotfix")
+	public @ResponseBody String greetingHotfix() {
+	return "Hello, pratica 04";
+	}
 }

@@ -40,4 +40,12 @@ class WebAppApplicationTests {
 			.andExpect(content()
 			.string(containsString("Hello, professor Ramide! Ajuste Passo 2 Parte 3.")));
 	}
+	
+	public void checkingUpdatedMenssage3() throws Exception {
+		this.mockMvc.perform(get("/Hotfix"))
+			
+			.andDo(print()).andExpect(status().isOk())
+			.andExpect(content()
+			.string(containsString("Hello, pratica 04")));
+	}
 }
