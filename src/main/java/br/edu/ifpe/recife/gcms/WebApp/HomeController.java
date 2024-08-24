@@ -27,7 +27,7 @@ public class HomeController {
 	}
 
 	@RequestMapping("/Build")
-	public @ResponseBody String greetinghotfix() {
+	public @ResponseBody String greetingbuild() {
 	return "Hello, pratica 05";
 	}
 }

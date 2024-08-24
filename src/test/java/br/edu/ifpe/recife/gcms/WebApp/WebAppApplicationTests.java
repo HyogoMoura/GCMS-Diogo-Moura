@@ -48,4 +48,12 @@ class WebAppApplicationTests {
 			.andExpect(content()
 			.string(containsString("Hello, pratica 04")));
 	}
+	
+	public void checkingUpdatedMenssage4() throws Exception {
+		this.mockMvc.perform(get("/build"))
+			
+			.andDo(print()).andExpect(status().isOk())
+			.andExpect(content()
+			.string(containsString("Hello, pratica 05")));
+	}
 }
