@@ -50,7 +50,7 @@ class WebAppApplicationTests {
 	}
 	
 	public void checkingUpdatedMenssage4() throws Exception {
-		this.mockMvc.perform(get("/build"))
+		this.mockMvc.perform(get("/build0122"))
 			
 			.andDo(print()).andExpect(status().isOk())
 			.andExpect(content()
